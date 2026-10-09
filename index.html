@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="En webbplatsprototyp för en lokal salong. Upptäck behandlingar, öppettider och kontaktinformation." />
+    <meta name="theme-color" content="#254c40" />
+    <title>Studio Lugn — din stund i vardagen</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehållet</a>
+    <div class="prototype-note">Webbplatsprototyp · Alla företagsuppgifter är exempel.</div>
+    <header class="site-header wrapper">
+      <a class="brand" href="#hem" aria-label="Studio Lugn, startsida">studio lugn<span>OMSORG I VARDAGEN</span></a>
+      <nav aria-label="Huvudnavigation">
+        <a href="#tjanster">Tjänster</a>
+        <a href="#oppettider">Öppettider</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="button" data-booking-link href="#bokning">Boka tid <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero wrapper" id="hem" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">DIN LOKALA SALONG · EXEMPELSTAD</p>
+          <h1 id="hero-title">Lite mer lugn.<br />Lite mer <em>du.</em></h1>
+          <p class="intro">Lämna vardagen utanför en stund. Hos Studio Lugn får du personlig omsorg och behandlingar med plats för återhämtning.</p>
+          <a class="button" data-booking-link href="#bokning">Boka tid <span aria-hidden="true">↗</span></a>
+          <p class="small">En stund för dig, nära dig.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="arch"><div class="stem stem-one"></div><div class="stem stem-two"></div><div class="stem stem-three"></div></div>
+          <div class="art-caption">ANDAS IN. LANDA HÄR.</div>
+        </div>
+      </section>
+      <section class="services wrapper section" id="tjanster" aria-labelledby="services-title">
+        <p class="eyebrow">VÅRA TJÄNSTER</p>
+        <h2 id="services-title">Omsorg från topp till tå.</h2>
+        <p class="section-intro">Exempel på behandlingar — innehåll, tider och priser anpassas inför lansering.</p>
+        <div class="cards">
+          <article class="card"><span class="service-number" aria-hidden="true">01 /</span><h3>Avslappnande massage</h3><p>En mjuk helkroppsmassage för dig som vill varva ner och ge spända muskler en paus.</p><p class="service-detail">50 min · Exempelpris 750 kr</p></article>
+          <article class="card"><span class="service-number" aria-hidden="true">02 /</span><h3>Ansiktsbehandling</h3><p>Rengöring, återfuktning och varsam ansiktsmassage, anpassat efter din huds behov.</p><p class="service-detail">60 min · Exempelpris 850 kr</p></article>
+          <article class="card"><span class="service-number" aria-hidden="true">03 /</span><h3>Fotvård & välbefinnande</h3><p>Ett skönt fotbad, vårdande behandling och avslutande massage för trötta fötter.</p><p class="service-detail">45 min · Exempelpris 650 kr</p></article>
+        </div>
+      </section>
+      <div class="visit-band">
+        <div class="wrapper visit-grid section">
+          <section id="oppettider" aria-labelledby="hours-title">
+            <p class="eyebrow">VÄLKOMMEN IN</p><h2 id="hours-title">Här finns tid för dig.</h2>
+            <dl class="hours"><div><dt>Måndag–fredag</dt><dd>09.00–18.00</dd></div><div><dt>Lördag</dt><dd>10.00–14.00</dd></div><div><dt>Söndag</dt><dd>Stängt</dd></div></dl>
+            <p class="small">Exempelöppettider. Besök sker efter tidsbokning.</p>
+          </section>
+          <section id="kontakt" aria-labelledby="contact-title">
+            <p class="eyebrow">HITTA HIT & HÖR AV DIG</p><h2 id="contact-title">Vi finns nära.</h2>
+            <address><p>Studio Lugn<br />Exempelgatan 12<br />123 45 Exempelstad</p><p>Telefon: 010-000 00 00 (exempel)<br /><a href="mailto:hej@example.com">hej@example.com</a> (exempel)</p></address>
+            <p class="small">Adress och kontaktuppgifter är platshållare, inte ett riktigt företag.</p>
+          </section>
+        </div>
+      </div>
+      <section class="booking wrapper section" id="bokning" aria-labelledby="booking-title" tabindex="-1">
+        <p class="eyebrow">DIN NÄSTA LUGNA STUND</p><h2 id="booking-title">Snart kan du boka här.</h2>
+        <p>Det här är en prototyp. Bokning är inte aktiverad ännu.<br />När rätt Bokadirekt-adress är tillagd leder länkarna ”Boka tid” dit.</p>
+      </section>
+    </main>
+    <footer class="wrapper site-footer"><span class="footer-brand">studio lugn</span><p>Prototyp · Inga bokningar eller personuppgifter samlas in.</p><a href="#hem">Till toppen ↑</a></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
