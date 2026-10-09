@@ -28,7 +28,7 @@ Run `npm run build` before previewing. Open the local URL printed by Vite. Previ
 
 ## Set up real booking
 
-Replace `BOOKING_URL` in `src/config.ts` with the correct full HTTPS Bokadirekt address. Its placeholder currently points to the on-page booking notice, so it cannot accidentally book with another business. The HTML anchors retain the same safe local notice as a no-JavaScript fallback; do not put the real booking URL into HTML.
+`BOOKING_URL` in `src/config.ts` currently opens Bokadirekt's homepage at the owner's request. Replace it with the business-specific HTTPS Bokadirekt address when available. The HTML anchors retain the on-page booking notice as a no-JavaScript fallback; keep the destination URL only in the config.
 
 Before launch, replace the sample business details and metadata in `index.html`, revise the booking section and remove prototype labels. Booking opens in the same tab.
 
@@ -36,4 +36,4 @@ Before launch, replace the sample business details and metadata in `index.html`,
 
 The page includes Swedish language metadata, landmarks, ordered headings, a skip link, descriptive links, visible keyboard focus and always-visible navigation. The illustration is decorative and hidden from assistive technology.
 
-Check narrow and wide viewports, zoom to 200%, and use Tab/Shift+Tab and Enter to navigate. Confirm all booking links reach the notice until configured, and the correct Bokadirekt page afterward. TypeScript/build checks do not replace browser or assistive-technology testing.
+Check narrow and wide viewports, zoom to 200%, and use Tab/Shift+Tab and Enter to navigate. Confirm all booking links open Bokadirekt's homepage (or the business page once configured) in the same tab. TypeScript/build checks do not replace browser or assistive-technology testing.

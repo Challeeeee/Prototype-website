@@ -1,3 +1,3 @@
-// BOOKING URL — replace only this value with your actual Bokadirekt address.
-// Until then, booking links lead to the on-page prototype notice (no real booking).
-export const BOOKING_URL = '#bokning';
+// BOOKING URL — the single setting used by every “Boka tid” link.
+// Currently opens Bokadirekt's homepage; replace with the business page when available.
+export const BOOKING_URL = 'https://www.bokadirekt.se/';
