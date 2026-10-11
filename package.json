@@ -7,7 +7,8 @@
     "dev": "vite",
     "typecheck": "tsc --noEmit",
     "build": "npm run typecheck && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:seo": "npm run build && node scripts/check-seo.mjs"
   },
   "devDependencies": {
     "typescript": "~5.9.3",

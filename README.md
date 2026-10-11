@@ -12,6 +12,7 @@ npm run dev        # local development server
 npm run typecheck  # TypeScript checking
 npm run build      # TypeScript check + production output in dist/
 npm run preview    # serve the production build locally
+npm run check:seo  # build + prototype SEO regression checks
 ```
 
 Run `npm run build` before previewing. Open the local URL printed by Vite. Preview is not a production hosting server.
@@ -25,6 +26,12 @@ Run `npm run build` before previewing. Open the local URL printed by Vite. Previ
 - `tsconfig.json`: strict TypeScript configuration.
 - `package-lock.json`: reproducible npm dependency versions.
 - `dist/`: generated production files (not committed).
+
+## SEO practice
+
+The demo deliberately uses **`noindex, follow`** so fictional business details stay out of search results once crawlers process it. `public/robots.txt` allows crawling so that directive can be read. Descriptive metadata and social-sharing tags are included; canonical URLs, sitemap and business structured data await a final domain and real details.
+
+See [the SEO checklist](docs/SEO-CHECKLIST.md) for Netlify verification, Lighthouse/PageSpeed testing, Search Console setup and a reusable client launch checklist. No new dependencies or environment variables are required. Automated checks in `scripts/check-seo.mjs` enforce demo safety, not ranking success.
 
 ## Set up real booking
 

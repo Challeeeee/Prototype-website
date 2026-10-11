@@ -1,0 +1,6 @@
+# Allow crawling so search engines can read the HTML noindex directive.
+# This fictional prototype must not be indexed. noindex lives in index.html.
+User-agent: *
+Allow: /
+
+# Add an absolute Sitemap URL only when the real website is ready to launch.
